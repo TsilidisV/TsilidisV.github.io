@@ -57,7 +57,3 @@ url_video: ''
 # projects:
 #   - example
 ---
-
-{{% callout note %}}
-Click on the **PDF** button above to view the slides.
-{{% /callout %}}
