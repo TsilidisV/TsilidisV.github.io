@@ -41,7 +41,7 @@ tags: ['Epidemiology', 'Mathematical Biology', 'Partial Differential Equations']
 featured: false
 
 # Links
-url_pdf: 'https://arxiv.org/abs/2311.16049'
+url_pdf: 'https://arxiv.org/pdf/2311.16049.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
