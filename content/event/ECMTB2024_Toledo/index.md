@@ -19,6 +19,8 @@ date: '2024-07-25T10:40:00Z'
 # date_end: '2022-09-06T15:00:00Z'
 all_day: false
 
+# Schedule page publish date (NOT talk date).
+publishDate: '2017-01-01T00:00:00Z'
 
 authors: [admin]
 tags: [Mathematical Biology, Dynamical Systems, Partial Differential Equations]
