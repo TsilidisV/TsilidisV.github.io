@@ -22,7 +22,7 @@ publishDate: '2024-02-01T12:08:08.676884Z'
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- preprint
+- article-journal
 
 # Publication name and optional abbreviated publication name.
 publication: ''
