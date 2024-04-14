@@ -14,10 +14,10 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2023-01-01'
+date: '2024-04-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2024-02-01T12:08:08.676884Z'
+publishDate: '2024-04-14T09:52:34.457526Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -25,7 +25,7 @@ publication_types:
 - article-journal
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: '*Mathematical Methods in the Applied Sciences*'
 publication_short: ''
 
 doi: 10.48550/arXiv.2311.16049
@@ -41,7 +41,7 @@ tags: ['Epidemiology', 'Mathematical Biology', 'Partial Differential Equations']
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://arxiv.org/abs/2311.16049'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -68,9 +68,6 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: arXiv
-  url: https://arxiv.org/abs/2311.16049
 ---
 
 {{% callout note %}}
