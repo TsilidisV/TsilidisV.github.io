@@ -24,7 +24,7 @@ publishDate: '2024-04-14T09:52:34.441287Z'
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- manuscript
+- article-journal
 
 # Publication name and optional abbreviated publication name.
 publication: '*Studies in Applied Mathematics*'
