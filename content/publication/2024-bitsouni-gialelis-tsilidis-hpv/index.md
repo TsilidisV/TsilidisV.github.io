@@ -1,5 +1,5 @@
 ---
-title: 'From primary HPV infection to carcinoma in situ: a mathematical approach of
+title: 'From primary HPV infection to carcinoma in situ: a mathematical approach to
   cervical intraepithelial neoplasia'
 
 # Authors
@@ -16,10 +16,10 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2024-04-10'
+date: '2024-05-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2024-04-14T09:52:34.441287Z'
+publishDate: '2024-05-01T09:52:34.441287Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -43,8 +43,9 @@ tags: ['Mathematical Biology', 'Partial Differential Equations']
 featured: false
 
 # Links
+- name: Journal link
+  url: https://doi.org/10.1111/sapm.12697
 url_pdf: 'https://arxiv.org/pdf/2403.13302.pdf'
-url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -73,6 +74,6 @@ projects: []
 ---
 
 {{% callout note %}}
-Click **[here](https://arxiv.org/abs/2403.13302)** to view the paper.
+Click **[here](https://doi.org/10.1111/sapm.12697)** to view the paper.
 {{% /callout %}}
 
