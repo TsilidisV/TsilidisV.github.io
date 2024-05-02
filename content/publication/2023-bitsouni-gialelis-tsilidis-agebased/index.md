@@ -28,7 +28,7 @@ publication_types:
 publication: ''
 publication_short: ''
 
-doi: 10.48550/arXiv.2312.01517
+doi:
 
 abstract: 'During an epidemic, such as the COVID-19 pandemic, policy-makers are dealing with the decision of effective, but socioeconomically costly interference, such as horizontal lockdowns, including school and workplace closure, physical distancing e.t.c. Investigating the role of the age of the individuals in the evolution of epidemiological phenomena, we propose a scheme for the comparison of certain epidemiological strategies. Then, we put the proposed scheme to the test by employing an age-based epidemiological compartment model introduced in a previous work of the authors, coupled with data from the literature, in order to compare the effectiveness of age-based and horizontal interventions. In general, our results suggest that these two are comparable mainly at low or medium level of austerity.'
 

@@ -44,8 +44,8 @@ featured: false
 
 # Links
 links:
-- name: Journal link
-  url: https://doi.org/10.1111/sapm.12697
+#- name: Journal link
+#  url: https://doi.org/10.1111/sapm.12697
 url_pdf: 'https://arxiv.org/pdf/2403.13302.pdf'
 url_dataset: ''
 url_poster: ''

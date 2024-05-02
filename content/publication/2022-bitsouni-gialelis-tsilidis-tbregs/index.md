@@ -9,7 +9,7 @@ author_notes:
 #- "Equal contribution"
 #- "Equal contribution"
 date: "2022-09-01T00:00:00Z"
-doi: ""
+doi: "10.1007/s11538-022-01054-y"
 
 
 publication_types:
@@ -30,9 +30,6 @@ tags:
 - Dynamical Systems
 featured: false
 
-links:
-- name: Journal link
-  url: https://link.springer.com/10.1007/s11538-022-01054-y
 url_pdf: https://arxiv.org/pdf/2203.01434.pdf
 url_code: ''
 url_dataset: ''
@@ -41,6 +38,10 @@ url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
+links:
+#- name: Journal link
+#  url: https://link.springer.com/10.1007/s11538-022-01054-y
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

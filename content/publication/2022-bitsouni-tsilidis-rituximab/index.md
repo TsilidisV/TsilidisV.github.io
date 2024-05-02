@@ -4,7 +4,7 @@ authors:
 - Vasiliki Bitsouni
 - admin
 date: "2022-01-05T00:00:00Z"
-doi: ""
+doi: "10.1016/j.jtbi.2021.111001"
 
 
 publication_types:
@@ -26,8 +26,8 @@ tags:
 featured: false
 
 links:
-- name: Journal link
-  url: https://linkinghub.elsevier.com/retrieve/pii/S0022519321004215
+#- name: Journal link
+#  url: https://linkinghub.elsevier.com/retrieve/pii/S0022519321004215
 url_pdf: https://arxiv.org/pdf/2110.01545.pdf
 url_code: ''
 url_dataset: ''
