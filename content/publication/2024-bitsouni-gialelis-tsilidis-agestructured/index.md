@@ -28,7 +28,7 @@ publication_types:
 publication: '*Mathematical Methods in the Applied Sciences*'
 publication_short: ''
 
-doi: 10.1002/mma.10165
+#doi: 10.1002/mma.10165
 
 abstract: 'In this paper, we introduce and study an age-structured epidemiological compartment model and its respective problem, applied but not limited to the COVID-19 pandemic, in order to investigate the role of the age of the individuals in the evolution of epidemiological phenomena. We investigate the well-posedness of the model, as well as the global dynamics of it in the sense of basic reproduction number via constructing Lyapunov functions.'
 
@@ -49,6 +49,9 @@ url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
+links:
+- name: Journal link
+  url: https://doi.org/10.1002/mma.10165
 
 # Custom links (uncomment lines below)
 # links:

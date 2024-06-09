@@ -9,7 +9,7 @@ author_notes:
 #- "Equal contribution"
 #- "Equal contribution"
 date: "2022-09-01T00:00:00Z"
-doi: "10.1007/s11538-022-01054-y"
+#doi: "10.1007/s11538-022-01054-y"
 
 
 publication_types:
@@ -39,9 +39,8 @@ url_slides: ''
 url_source: ''
 url_video: ''
 links:
-#- name: Journal link
-#  url: https://link.springer.com/10.1007/s11538-022-01054-y
-
+- name: Journal link
+  url: https://doi.org/10.1007/s11538-022-01054-y
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

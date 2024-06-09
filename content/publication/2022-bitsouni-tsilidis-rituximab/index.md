@@ -4,7 +4,7 @@ authors:
 - Vasiliki Bitsouni
 - admin
 date: "2022-01-05T00:00:00Z"
-doi: "10.1016/j.jtbi.2021.111001"
+#doi: "10.1016/j.jtbi.2021.111001"
 
 
 publication_types:
@@ -25,9 +25,7 @@ tags:
 - Dynamical Systems
 featured: false
 
-links:
-#- name: Journal link
-#  url: https://linkinghub.elsevier.com/retrieve/pii/S0022519321004215
+
 url_pdf: https://arxiv.org/pdf/2110.01545.pdf
 url_code: ''
 url_dataset: ''
@@ -36,6 +34,9 @@ url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
+links:
+- name: Journal link
+  url: https://doi.org/10.1016/j.jtbi.2021.111001
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

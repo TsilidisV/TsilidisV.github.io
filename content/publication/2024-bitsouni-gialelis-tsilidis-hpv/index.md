@@ -30,7 +30,7 @@ publication_types:
 publication: '*Studies in Applied Mathematics*'
 publication_short: ''
 
-doi: 10.1111/sapm.12697
+#doi: 10.1111/sapm.12697
 
 abstract: 'Cervical intraepithelial neoplasia (CIN) is the development of abnormal cells on the surface of the cervix, caused by a human papillomavirus (HPV) infection. Although in most of the cases it is resolved by the immune system, a small percentage of people might develop a more serious CIN which, if left untreated, can develop into cervical cancer. Cervical cancer is the fourth most common cancer in women globally, for which the World Health Organization (WHO) recently adopted the Global Strategy for cervical cancer elimination by 2030. With this research topic being more imperative than ever, in this paper, we develop a nonlinear mathematical model describing the CIN progression. The model consists of partial differential equations describing the dynamics of epithelial, dysplastic and immune cells, as well as the dynamics of viral particles. We use our model to explore numerically three important factors of dysplasia progression, namely the geometry of the cervix, the strength of the immune response and the frequency of viral exposure.'
 
@@ -43,9 +43,6 @@ tags: ['Mathematical Biology', 'Partial Differential Equations']
 featured: false
 
 # Links
-links:
-#- name: Journal link
-#  url: https://doi.org/10.1111/sapm.12697
 url_pdf: 'https://arxiv.org/pdf/2403.13302.pdf'
 url_dataset: ''
 url_poster: ''
@@ -53,6 +50,9 @@ url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
+links:
+- name: Journal link
+  url: https://doi.org/10.1111/sapm.12697
 
 # Custom links (uncomment lines below)
 # links:
