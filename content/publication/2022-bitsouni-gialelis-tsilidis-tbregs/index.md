@@ -65,5 +65,5 @@ slides: ""
 ---
 
 {{% callout note %}}
-Click **[here](https://arxiv.org/pdf/2203.01434.pdf)** to view the paper.
+Click [here](https://arxiv.org/pdf/2203.01434.pdf) to view the paper.
 {{% /callout %}}

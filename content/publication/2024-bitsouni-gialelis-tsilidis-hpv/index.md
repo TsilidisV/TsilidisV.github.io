@@ -75,6 +75,6 @@ projects: []
 ---
 
 {{% callout note %}}
-Click **[here](https://doi.org/10.1111/sapm.12697)** to view the paper.
+Click [here](https://doi.org/10.1111/sapm.12697) to view the paper.
 {{% /callout %}}
 
