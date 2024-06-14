@@ -72,7 +72,10 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+
+# Random link outside of the callout note, so that the link inside the callout note can work.
 ---
+[](https://doi.org/10.1111/sapm.12697)
 
 {{% callout note %}}
 Click [here](https://doi.org/10.1111/sapm.12697) to view the paper.

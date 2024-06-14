@@ -62,7 +62,10 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
+
+# Random link outside of the callout note, so that the link inside the callout note can work.
 ---
+[](https://arxiv.org/pdf/2203.01434.pdf)
 
 {{% callout note %}}
 Click [here](https://arxiv.org/pdf/2203.01434.pdf) to view the paper.
