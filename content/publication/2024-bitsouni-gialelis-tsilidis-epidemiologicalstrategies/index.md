@@ -76,3 +76,5 @@ links:
 {{% callout note %}}
 Click here and [there](https://arxiv.org/abs/2312.01517) to view the paper!.
 {{% /callout %}}
+
+[there](https://arxiv.org/abs/2312.01517)
