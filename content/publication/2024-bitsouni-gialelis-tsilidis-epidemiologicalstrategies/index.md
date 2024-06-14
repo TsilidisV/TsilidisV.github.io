@@ -74,9 +74,8 @@ links:
 ---
 
 
+The framework developed in this paper could offer a powerful way of systematically comparing different epidemiological strategies, thus aiding in the decision-making process[](https://arxiv.org/abs/2312.01517).
 
 {{% callout note %}}
 Click [here](https://arxiv.org/abs/2312.01517) to view the paper!
 {{% /callout %}}
-
-The framework developed in this paper could offer a powerful way of systematically comparing different epidemiological strategies, thus aiding in the decision-making process.
