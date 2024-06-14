@@ -21,10 +21,11 @@ publishDate: '2024-14-06T12:08:08.926790Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
-publication_types: ['journal-article']
+publication_types: 
+- article-journal
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: 'to appear in *Infectious Disease Modelling*'
 publication_short: ''
 
 doi:
