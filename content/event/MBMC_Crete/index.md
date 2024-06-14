@@ -40,8 +40,8 @@ links:
 #    name: Follow
 #    url: https://twitter.com/georgecushen
 url_code: ''
-url_pdf: uploads/events/Vasilis_Tsilidis_Immune_response_in_breast_cancer_the_effect_of_tBregs_and_rituximab.pdf
-url_slides: ''
+url_pdf: 
+url_slides: Vasilis_Tsilidis_Immune_response_in_breast_cancer_the_effect_of_tBregs_and_rituximab.pdf
 url_video: ''
 
 # # Markdown Slides (optional).

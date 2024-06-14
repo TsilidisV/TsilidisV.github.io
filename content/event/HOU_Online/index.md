@@ -34,8 +34,8 @@ links:
 #    name: Follow
 #    url: https://twitter.com/georgecushen
 url_code: ''
-url_pdf: uploads/events/Vasilis_Tsilidis_Mathematical_models_of_Immune_Response_in_Cancer.pdf
-url_slides: ''
+url_pdf: ''
+url_slides: Vasilis_Tsilidis_Mathematical_models_of_Immune_Response_in_Cancer.pdf
 url_video: https://youtu.be/jgwtthCxfzs
 
 # # Markdown Slides (optional).

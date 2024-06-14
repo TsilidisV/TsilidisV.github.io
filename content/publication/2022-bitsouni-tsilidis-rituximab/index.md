@@ -23,7 +23,7 @@ tags:
 - Mathematical Biology
 - Ordinary Differential Equations
 - Dynamical Systems
-featured: false
+featured: true
 
 
 url_pdf: https://arxiv.org/pdf/2110.01545.pdf
