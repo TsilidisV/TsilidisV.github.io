@@ -42,7 +42,7 @@ featured: false
 
 # Links
 url_pdf: 'uploads/papers/An_age‐structured_SVEAIR_epidemiological_model_Math_Methods_in_App_Sciences_2024.pdf'
-url_code: ''
+url_code: 'https://github.com/TsilidisV/age-structured-SVeaiR-model'
 url_dataset: ''
 url_poster: ''
 url_project: ''
