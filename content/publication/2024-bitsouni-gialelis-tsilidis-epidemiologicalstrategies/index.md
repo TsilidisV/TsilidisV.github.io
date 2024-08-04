@@ -25,7 +25,7 @@ publication_types:
 - article-journal
 
 # Publication name and optional abbreviated publication name.
-publication: 'to appear in *Infectious Disease Modelling*'
+publication: '*Infectious Disease Modelling*'
 publication_short: ''
 
 doi:
@@ -41,7 +41,7 @@ tags: ['Epidemiology','Mathematical Biology']
 featured: true
 
 # Links
-url_pdf: ''
+url_pdf: https://arxiv.org/pdf/2312.01517
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -49,6 +49,9 @@ url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
+links:
+- name: Journal link
+  url: https://www.sciencedirect.com/science/article/pii/S2468042724000915
 
 # Custom links (uncomment lines below)
 # links:
@@ -68,9 +71,7 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: arXiv
-  url: https://arxiv.org/abs/2312.01517
+
 ---
 
 
