@@ -41,6 +41,8 @@ profiles:
     url: https://orcid.org/0000-0001-5868-4984
   - icon: academicons/researchgate
     url: https://www.researchgate.net/profile/Vasilis_Tsilidis
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/vasilis-tsilidis-025792149
 
 interests:
   - Mathematical Biology
@@ -49,15 +51,15 @@ interests:
   - Data Visualization
 
 education:
-  - area: PhD in Mathematical Biology
-    institution: University of Patras
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
+#  - area: PhD in Mathematical Biology
+#    institution: University of Patras
+#    date_start: 2016-01-01
+#    date_end: 2020-12-31
+#    summary: |
+#      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 #Springer journals.
+#    button:
+#      text: 'Read Thesis'
+#      url: 'https://example.com'
   - area: MSc in Applied Mathematics
     institution: Hellenic Open University
     date_start: 2016-01-01
