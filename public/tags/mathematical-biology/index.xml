@@ -5,12 +5,27 @@
     <link>http://localhost:1313/tags/mathematical-biology/</link>
       <atom:link href="http://localhost:1313/tags/mathematical-biology/index.xml" rel="self" type="application/rss+xml" />
     <description>Mathematical Biology</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 25 Jul 2024 10:40:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu2347a6264967d6017ad817d80f2a6fa6_40701_512x512_fill_lanczos_center_3.png</url>
       <title>Mathematical Biology</title>
       <link>http://localhost:1313/tags/mathematical-biology/</link>
     </image>
+    
+    <item>
+      <title>Partial dependence of ultrasonically estimated fetal weight on biometric parameters</title>
+      <link>http://localhost:1313/publication/2025-bitsouni-gialelis-tsilidis-fetalweightestimation/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2025-bitsouni-gialelis-tsilidis-fetalweightestimation/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.medrxiv.org/content/10.1101/2024.09.17.24313697v3.full.pdf&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click &lt;a href=&#34;https://www.medrxiv.org/content/10.1101/2024.09.17.24313697v3.full.pdf&#34;&gt;here&lt;/a&gt; to view the paper.&lt;/span&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Can age-based restrictions replace horizontal lockdowns?</title>

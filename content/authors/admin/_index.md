@@ -31,7 +31,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:vtsilidis@upatras.com'
+    url: 'mailto:vtsilidis@upatras.gr'
     label: E-mail Me
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?hl=en&user=3qaGBDkAAAAJ
@@ -42,7 +42,7 @@ profiles:
   - icon: academicons/researchgate
     url: https://www.researchgate.net/profile/Vasilis_Tsilidis
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/vasilis-tsilidis-025792149
+    url: https://www.linkedin.com/in/vasilis-tsilidis
 
 interests:
   - Mathematical Biology
