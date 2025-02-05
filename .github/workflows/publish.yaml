@@ -57,11 +57,7 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./public
-    - name: Download artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        name: github-pages
-        path: ./public
+
 
   # Deploy website to GitHub Pages hosting
   deploy:
