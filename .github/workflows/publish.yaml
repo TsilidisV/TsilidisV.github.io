@@ -57,6 +57,14 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./public
+        
+- uses: actions/cache@v3
+  with:
+    path: /tmp/hugo_cache_runner/
+    key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}-${{ github.run_id }}
+    restore-keys: |
+      ${{ runner.os }}-hugomod-
+
 
 
   # Deploy website to GitHub Pages hosting
