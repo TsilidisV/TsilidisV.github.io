@@ -14,32 +14,26 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2025-01-23'
+date: '2025-06-18'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2025-01-23T09:52:34.441287Z'
+publishDate: '2025-06-18T09:52:34.441287Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- preprint
+- article-journal
 
 # Publication name and optional abbreviated publication name.
-publication: '*medRxiv*'
+publication: '*Royal Society Open Science*'
 publication_short: ''
 
 #doi: 10.1111/sapm.12697
 
-abstract: 'Objectives: To assess the contribution of each sonographically measured parameter on fetal weight formulas.
-
-Methods: Multiple datasets and datasets extracted from existing literature are employed in this study. The Sobol’ method is then implemented on each of these datasets. Following this, bootstrapping is carried out using the indices from individual weeks as sample points. The mean value for each resulting sample is calculated. Finally, the median, along with a 95% confidence interval, is estimated based on the empirical distribution. This methodology is repeated for all formulas examined.
-
-Results: The median, along with a 95% CI, for the estimate of the mean of the Sobol’ sensitivity indices for the parameters of 29 known formulas are presented.
-
-Conclusions: Depending on the formula, the values of some parameters show substantial fluctuations or are insignificant to the fetal weight estimation.'
+abstract: 'Accurate assessment of estimated fetal weight (EFW) is crucial in obstetrics, yet the exact contribution of biometric parameters in sonographic formulas remains unclear. Twenty-six datasets from published studies spanning diverse populations and gestational ages were analysed, incorporating measurements of biparietal diameter (BPD), abdominal circumference (AC), head circumference (HC) and femur length (FL). Sobol’ global sensitivity analysis—a variance‑based approach—quantified each parameter’s influence on EFW across 29 established formulas, and bootstrapping estimated the median of the sensitivity indices with 95% confidence intervals. Results showed that AC was generally the dominant predictor, especially in later pregnancy, while BPD, HC and FL exhibited variable importance depending on formula and gestational age. Two-thirds of the formulas demonstrated parameter crossover effects, and nearly half had at least one parameter with minimal contribution. These findings indicate that parameter significance differs by both formula and gestational age, suggesting that clinicians should select EFW formulas based on gestational age, measurement reliability and fetal characteristics. Estimates made with fewer than the intended parameters can be viable in emergencies. The proposed methodology can guide the refinement of existing formulas and the development of improved fetal weight estimation models.'
 
 # Summary. An optional shortened abstract.
-summary: 'The contribution of the biometric parameters of 29 known formulas for fetal weight estimation is assessed, using the Sobol’ method, bootstrapping and 26 datasets from published studies.'
+summary: 'The contribution of the biometric parameters of 29 established formulas for fetal weight estimation is assessed, using the Sobol’ method, bootstrapping and 26 datasets from published studies.'
 
 tags: ['Mathematical Biology', 'Obstetrics and Gynaecology', 'Statistics']
 
@@ -48,15 +42,16 @@ featured: false
 
 # Links
 url_pdf: 'https://www.medrxiv.org/content/10.1101/2024.09.17.24313697v3.full.pdf'
+url_code: 'https://github.com/TsilidisV/DopEFW.jl'
 url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
-#links:
-#- name: Journal link
-#  url: https://doi.org/10.1111/sapm.12697
+links:
+- name: Journal link
+  url: https://doi.org/10.1098/rsos.250172
 
 # Custom links (uncomment lines below)
 # links:
