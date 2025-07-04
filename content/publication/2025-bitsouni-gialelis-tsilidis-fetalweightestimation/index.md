@@ -38,7 +38,7 @@ summary: 'The contribution of the biometric parameters of 29 established formula
 tags: ['Mathematical Biology', 'Obstetrics and Gynaecology', 'Statistics']
 
 # Display this page in a list of Featured pages?
-featured: false
+featured: true
 
 # Links
 url_pdf: 'https://www.medrxiv.org/content/10.1101/2024.09.17.24313697v3.full.pdf'

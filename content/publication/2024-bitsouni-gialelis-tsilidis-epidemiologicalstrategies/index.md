@@ -38,7 +38,7 @@ summary: 'We introduce a scheme for the comparison of epidemiological strategies
 tags: ['Epidemiology','Mathematical Biology']
 
 # Display this page in a list of Featured pages?
-featured: true
+featured: false
 
 # Links
 url_pdf: https://arxiv.org/pdf/2312.01517
