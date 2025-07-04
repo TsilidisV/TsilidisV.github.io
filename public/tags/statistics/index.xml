@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/statistics/</link>
       <atom:link href="http://localhost:1313/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Statistics</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu2347a6264967d6017ad817d80f2a6fa6_40701_512x512_fill_lanczos_center_3.png</url>
       <title>Statistics</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Partial dependence of ultrasonically estimated fetal weight on biometric parameters</title>
       <link>http://localhost:1313/publication/2025-bitsouni-gialelis-tsilidis-fetalweightestimation/</link>
-      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/2025-bitsouni-gialelis-tsilidis-fetalweightestimation/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.medrxiv.org/content/10.1101/2024.09.17.24313697v3.full.pdf&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
@@ -25,6 +25,14 @@
   &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click &lt;a href=&#34;https://www.medrxiv.org/content/10.1101/2024.09.17.24313697v3.full.pdf&#34;&gt;here&lt;/a&gt; to view the paper.&lt;/span&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Unveiling the drivers of fetal weight estimation: which ultrasound measurements matter most?</title>
+      <link>http://localhost:1313/event/smb2025_edmonton/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/event/smb2025_edmonton/</guid>
+      <description></description>
     </item>
     
   </channel>
