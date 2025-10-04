@@ -41,7 +41,7 @@ tags: ['Mathematical Biology', 'Obstetrics and Gynaecology', 'Statistics']
 featured: true
 
 # Links
-url_pdf: 'https://www.medrxiv.org/content/10.1101/2024.09.17.24313697v3.full.pdf'
+url_pdf: 'uploads/papers/2025-partial-dependence-of-ultrasonically-estimated-fetal-weight-on-biometric-parameters.pdf'
 url_code: 'https://github.com/TsilidisV/DopEFW.jl'
 url_dataset: ''
 url_poster: ''
