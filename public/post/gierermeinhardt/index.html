@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: October 4, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 29, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -158,8 +158,8 @@
   
 
   
-  <link rel="icon" type="image/png" href="/media/icon_hu2347a6264967d6017ad817d80f2a6fa6_40701_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu2347a6264967d6017ad817d80f2a6fa6_40701_180x180_fill_lanczos_center_3.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu_409e7b5fa8858403.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_6b19ff7f3b1431f6.png" />
 
   <link rel="canonical" href="http://localhost:1313/post/gierermeinhardt/" />
 
@@ -984,7 +984,8 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/publication/2024-bitsouni-gialelis-tsilidis-hpv/"
     
-  >From primary HPV infection to carcinoma in situ: a mathematical approach to cervical intraepithelial neoplasia
+  >From primary HPV infection to carcinoma in situ: a mathematical approach to
+cervical intraepithelial neoplasia
     </a>
               
             </li><li class="flex flex-col "><a
@@ -1191,7 +1192,7 @@
           <div class="group inline-flex items-center text-current gap-x-1.5 mx-1">
             
             
-            <img src="/author/vasilis-tsilidis/avatar_huf644a5be7bcbe8516e02f5d3a9991f74_360721_50x50_fill_q80_h2_lanczos_center_3.webp" alt="Vasilis Tsilidis" class="inline-block h-4 w-4 rounded-full border border-current" loading="lazy" />
+            <img src="/author/vasilis-tsilidis/avatar_hu_87485ded60897a7e.webp" alt="Vasilis Tsilidis" class="inline-block h-4 w-4 rounded-full border border-current" loading="lazy" />
             
             <div >Vasilis Tsilidis</div>
           </div>
@@ -1236,7 +1237,7 @@
       
       <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 600px; max-height: 600px;">
         <div style="position: relative">
-          <img src="/post/gierermeinhardt/featured_hu20ece05c6429352de109630aa7607bd5_47629_86854fee72e9158f6ef0976fa444474d.webp" width="600" height="600" alt="" class="featured-image">
+          <img src="/post/gierermeinhardt/featured_hu_9af92274a2b68f4e.webp" width="600" height="600" alt="" class="featured-image">
           
         </div>
       </div>
@@ -1248,9 +1249,7 @@
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
         <h2 id="solving-the-gierer-meinhardt-model-using-julia">Solving the Gierer-Meinhardt model using Julia</h2>
 <p>The Gierer-Meinhardt model is defined as follows:</p>
-$$ \frac{\partial u}{\partial t} = D_u \Delta u +  \rho\frac{u^2}{v} - \mu_u u + \rho_u $$
-$$ \frac{\partial v}{\partial t} =  D_v \Delta v + \rho u^2 - \mu_v v + \rho_v, $$
-<p>with</p>
+$$ \frac{\partial u}{\partial t} = D_u \Delta u +  \rho\frac{u^2}{v} - \mu_u u + \rho_u $$$$ \frac{\partial v}{\partial t} =  D_v \Delta v + \rho u^2 - \mu_v v + \rho_v, $$<p>with</p>
 <ul>
 <li>$u$ being a short-range autocatalytic substance, or in other words, an activator,</li>
 <li>$v$ being its long-range antagonist, or in other words, an inhibitor, and,</li>
@@ -1261,15 +1260,17 @@ $$ \frac{\partial v}{\partial t} =  D_v \Delta v + \rho u^2 - \mu_v v + \rho_v, 
 <p>More info on the Gierer-Meinhardt model can be found in <a href="http://www.scholarpedia.org/article/Gierer-Meinhardt_model" target="_blank" rel="noopener">this</a> scholarpedia article.</p>
 <h2 id="solving-the-system">Solving the system</h2>
 <p>We&rsquo;ll solve the following IBVP:</p>
-$$ \frac{\partial u}{\partial t} = D_u \Delta u +  \rho\frac{u^2}{v} - \mu_u u + \rho_u $$
-$$ \frac{\partial v}{\partial t} =  D_v \Delta v + \rho u^2 - \mu_v v + \rho_v  $$
-$$ u(x,y,0) = \exp{\left(-(x-a)^2-(y-a)^2\right)}, \quad \forall (x,y) \in (0,L)^2$$
-$$ v(x,y,0) = {\rm rand}(), \quad \forall (x,y) \in (0,L)^2$$
-$$ \frac{\partial u}{\partial n}(x,0,t)  = \frac{\partial v}{\partial n}(x,0,t) = 0, \quad \forall x \in [0,L]$$
-$$ \frac{\partial u}{\partial n}(x,L,t)  = \frac{\partial v}{\partial n}(x,L,t) = 0, \quad \forall x \in [0,L]$$
-$$ \frac{\partial u}{\partial n}(0,y,t)  = \frac{\partial v}{\partial n}(0,y,t) = 0, \quad \forall y \in [0,L]$$
-$$ \frac{\partial u}{\partial n}(L,y,t)  = \frac{\partial v}{\partial n}(L,y,t) = 0, \quad \forall y \in [0,L] .$$
-<p>We start by initializing the parameters</p>
+$$ \frac{\partial u}{\partial t} = D_u \Delta u +  \rho\frac{u^2}{v} - \mu_u u + \rho_u $$$$ \frac{\partial v}{\partial t} =  D_v \Delta v + \rho u^2 - \mu_v v + \rho_v  $$$$ u(x,y,0) = \exp{\left(-(x-a)^2-(y-a)^2\right)}, \quad \forall (x,y) \in (0,L)^2$$<p>
+</p>
+$$ v(x,y,0) = {\rm rand}(), \quad \forall (x,y) \in (0,L)^2$$<p>
+</p>
+$$ \frac{\partial u}{\partial n}(x,0,t)  = \frac{\partial v}{\partial n}(x,0,t) = 0, \quad \forall x \in [0,L]$$<p>
+</p>
+$$ \frac{\partial u}{\partial n}(x,L,t)  = \frac{\partial v}{\partial n}(x,L,t) = 0, \quad \forall x \in [0,L]$$<p>
+</p>
+$$ \frac{\partial u}{\partial n}(0,y,t)  = \frac{\partial v}{\partial n}(0,y,t) = 0, \quad \forall y \in [0,L]$$<p>
+</p>
+$$ \frac{\partial u}{\partial n}(L,y,t)  = \frac{\partial v}{\partial n}(L,y,t) = 0, \quad \forall y \in [0,L] .$$<p>We start by initializing the parameters</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">Du</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="n">Dv</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
@@ -1376,10 +1377,10 @@ $$ \frac{\partial u}{\partial n}(L,y,t)  = \frac{\partial v}{\partial n}(L,y,t) 
 <figure  >
   <div class="flex justify-center	">
     <div class="w-100" ><img alt="png" srcset="
-               /post/gierermeinhardt/output_19_0_hu20ece05c6429352de109630aa7607bd5_47629_fcc8120d24ac67f94069b08c87927b24.webp 400w,
-               /post/gierermeinhardt/output_19_0_hu20ece05c6429352de109630aa7607bd5_47629_1466738c7be83286edd969eebc931b88.webp 760w,
-               /post/gierermeinhardt/output_19_0_hu20ece05c6429352de109630aa7607bd5_47629_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
-               src="/post/gierermeinhardt/output_19_0_hu20ece05c6429352de109630aa7607bd5_47629_fcc8120d24ac67f94069b08c87927b24.webp"
+               /post/gierermeinhardt/output_19_0_hu_475c034c6a4efd2d.webp 400w,
+               /post/gierermeinhardt/output_19_0_hu_18e47babdf4a0d54.webp 760w,
+               /post/gierermeinhardt/output_19_0_hu_75b1918e4087e5fe.webp 1200w"
+               src="/post/gierermeinhardt/output_19_0_hu_475c034c6a4efd2d.webp"
                width="600"
                height="600"
                loading="lazy" data-zoomable /></div>
@@ -1643,7 +1644,7 @@ $$ \frac{\partial u}{\partial n}(L,y,t)  = \frac{\partial v}{\partial n}(L,y,t) 
     width="96"
     height="96"
     alt="Vasilis Tsilidis"
-  src="/author/vasilis-tsilidis/avatar_huf644a5be7bcbe8516e02f5d3a9991f74_360721_192x192_fill_lanczos_center_3.png"
+  src="/author/vasilis-tsilidis/avatar_hu_28aeaa08511f28c1.png"
   loading="lazy"
   />
   
