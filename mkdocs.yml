@@ -1,0 +1,76 @@
+site_name: Vasilis Tsilidis
+site_url: https://tsilidisv.github.io/
+repo_url: https://github.com/TsilidisV/TsilidisV.github.io
+
+
+theme:
+  name: material
+  font:
+    text: Lato
+    code: Roboto Mono
+  palette: 
+    - scheme: slate # This is crucial (Dark Mode)
+      primary: cyan # clickable links color
+      accent: deep-purple # cklickable links when hovered color
+
+
+
+  features:
+    - navigation.tabs        # Top-level tabs (looks like a sophisticated app)
+    - navigation.top         # "Back to top" button
+    - toc.follow             # Table of contents follows scroll
+    - content.code.copy      # Copy button for code blocks
+    - navigation.footer
+
+# Plugins
+plugins:
+  - search
+  - macros
+  - social
+  - blog:
+      blog_dir: blog
+      post_dir: blog/posts # Looks for posts in docs/blog/posts/
+      post_url_date_format: yyyy/MM/dd # Creates URLs like /blog/2024/05/15/my-post/
+      archive: true      # Force Archive widget
+      categories: true   # Force Categories widget
+      blog_toc: true     # Force the blog to use the TOC slot
+
+# The Navigation Structure
+nav:
+  - Home: index.md
+  - Education: education.md
+  - Projects: projects/index.md
+  - Publications: publications/index.md
+  - Talks: talks/index.md
+  - Blog: blog/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:vtsilidis@upatras.gr
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/vasilis-tsilidis
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.com/citations?hl=en&user=3qaGBDkAAAAJ
+    - icon: fontawesome/brands/github 
+      link: https://github.com/TsilidisV
+
+
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/wallpaper.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+  - https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+  - https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css

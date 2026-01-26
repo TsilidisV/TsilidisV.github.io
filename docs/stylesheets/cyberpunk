@@ -1,0 +1,304 @@
+/* Cyberpunk / Outrun Theme for MkDocs Material 
+   Author: Gemini
+   Usage: Add to extra_css in mkdocs.yml and set palette scheme to 'slate'
+*/
+
+:root {
+  /* --- Core Color Palette --- */
+  --cyber-void: #050509;       /* Deepest Black/Blue */
+  --cyber-dark: #0b0c15;       /* Sidebar/Backgrounds */
+  --cyber-panel: #13141f;      /* Cards/Code blocks */
+  
+  --neon-cyan: #00f3ff;        /* Primary Accent */
+  --neon-pink: #bc13fe;        /* Secondary Accent */
+  --neon-green: #0aff0a;       /* Success/Strings */
+  --neon-red: #ff2a2a;         /* Error/Warning */
+  
+  --hologram-white: #e0f7fa;   /* Main Text */
+  --hologram-dim: #94a3b8;     /* Muted Text */
+
+  /* --- MkDocs Material Variable Overrides --- */
+  
+  /* Text Colors */
+  --md-default-fg-color: var(--hologram-white);
+  --md-default-fg-color--light: var(--hologram-dim);
+  --md-default-fg-color--lighter: var(--hologram-dim);
+  --md-default-fg-color--lightest: var(--hologram-dim);
+
+  /* Background Colors */
+  --md-default-bg-color: var(--cyber-void);
+  --md-default-bg-color--light: var(--cyber-panel);
+  --md-default-bg-color--lighter: var(--cyber-panel);
+  --md-default-bg-color--lightest: var(--cyber-panel);
+
+  /* Primary Branding (Header/Links) */
+  --md-primary-fg-color: var(--neon-cyan);
+  --md-primary-bg-color: rgba(5, 5, 9, 0.85); /* Semi-transparent header */
+  --md-primary-fg-color--light: var(--neon-pink);
+  --md-primary-fg-color--dark: var(--neon-cyan);
+  
+  /* Accent Colors */
+  --md-accent-fg-color: var(--neon-pink);
+  
+  /* Code Blocks */
+  --md-code-bg-color: #000000;
+  --md-code-fg-color: var(--neon-green);
+  
+  /* Admonitions (Note boxes) */
+  --md-admonition-bg-color: rgba(0, 243, 255, 0.05);
+
+  /* Typography glow */
+  --text-glow-blue: 0 0 5px rgba(0, 243, 255, 0.5);
+  --text-glow-pink: 0 0 5px rgba(188, 19, 254, 0.5);
+}
+
+/* --- Global Background & Grid Effect --- */
+body {
+  background-color: var(--cyber-void);
+  background-image: 
+    linear-gradient(rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(188, 19, 254, 0.05), transparent 70%);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/* --- Header Styling --- */
+.md-header {
+  border-bottom: 1px solid var(--neon-cyan);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+}
+
+.md-header__title {
+  font-family: 'Courier New', Courier, monospace; /* Tech feel */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: var(--text-glow-blue);
+}
+
+/* --- Sidebar Styling --- */
+.md-sidebar {
+  background: transparent;
+}
+
+.md-nav__link--active {
+  color: var(--neon-cyan) !important;
+  text-shadow: 0 0 8px var(--neon-cyan);
+  border-left: 2px solid var(--neon-cyan);
+  padding-left: 10px;
+}
+
+/* --- Typography & Content --- */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3 {
+  color: var(--neon-cyan);
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(0, 243, 255, 0.2);
+  padding-bottom: 0.2em;
+}
+
+.md-typeset h1 {
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.4);
+}
+
+.md-typeset a {
+  color: var(--neon-pink);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--neon-pink);
+}
+
+.md-typeset a:hover {
+  color: var(--neon-cyan);
+  text-shadow: var(--text-glow-blue);
+  border-bottom: 1px solid var(--neon-cyan);
+}
+
+/* --- Code Blocks --- */
+.md-typeset pre > code {
+  border: 1px solid rgba(188, 19, 254, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+/* Inline code */
+.md-typeset code {
+  color: var(--neon-pink);
+  background: rgba(188, 19, 254, 0.1);
+  border: 1px solid rgba(188, 19, 254, 0.2);
+  border-radius: 3px;
+}
+
+/* --- Search Bar --- */
+.md-search__input {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid var(--neon-cyan);
+  color: var(--neon-cyan) !important;
+}
+
+.md-search__input:focus {
+  box-shadow: 0 0 10px var(--neon-cyan);
+}
+
+/* --- Buttons --- */
+.md-button {
+  background-color: transparent;
+  color: var(--neon-cyan);
+  border: 1px solid var(--neon-cyan);
+  transition: all 0.3s ease;
+}
+
+.md-button:hover {
+  background-color: var(--neon-cyan);
+  color: var(--cyber-black);
+  box-shadow: 0 0 15px var(--neon-cyan);
+}
+
+.md-button--primary {
+  background-color: rgba(0, 243, 255, 0.1);
+  border-color: var(--neon-cyan);
+}
+
+/* --- Admonitions (Alert Boxes) --- */
+.md-typeset .admonition, 
+.md-typeset details {
+  background-color: rgba(5, 5, 9, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.md-typeset .admonition.note {
+  border-left-color: var(--neon-cyan);
+}
+
+.md-typeset .admonition.warning {
+  border-left-color: var(--neon-pink);
+}
+
+/* --- Table Styling --- */
+.md-typeset table:not([class]) {
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+.md-typeset table:not([class]) th {
+  color: var(--neon-cyan);
+  background: rgba(0, 243, 255, 0.1);
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: var(--cyber-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--neon-cyan);
+  border-radius: 0;
+  border: 1px solid var(--cyber-black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--neon-pink);
+}
+
+/* --- Selection Highlight --- */
+::selection {
+  background: var(--neon-pink);
+  color: white;
+  text-shadow: none;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, 50px) scale(1.3); }
+    66% { transform: translate(-20px, 20px) scale(0.7); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+
+
+/* --- Bento Grid Layout --- */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  gap: 1.5rem;
+  margin: 2em 0;
+}
+
+.bento-card {
+  background: rgba(19, 20, 31, 0.4); /* Transparent version of --cyber-panel */
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  border-radius: 12px; /* Smooth corners for modern feel */
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Hover Effect */
+.bento-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 10px 30px -10px rgba(0, 243, 255, 0.2);
+  border-color: var(--neon-cyan);
+  background: rgba(19, 20, 31, 0.8);
+}
+
+/* Add a scanline effect on hover */
+.bento-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 243, 255, 0.03) 50%
+  );
+  background-size: 100% 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.bento-card:hover::after {
+  opacity: 1;
+}
+
+/* Typography inside cards */
+.bento-card h3,
+.bento-card h4 {
+  margin-top: 0;
+  color: var(--neon-cyan);
+  border-bottom: none; /* Remove default mkdocs underline */
+  font-size: 1.2rem;
+}
+
+.bento-card p {
+  font-size: 0.95rem;
+  color: var(--hologram-dim);
+  line-height: 1.5;
+}
+
+/* Grid Span Utilities */
+.col-span-2 { grid-column: span 2; }
+.row-span-2 { grid-row: span 2; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .col-span-2 { grid-column: 1 / -1; }
+  .bento-grid { grid-template-columns: 1fr; }
+}

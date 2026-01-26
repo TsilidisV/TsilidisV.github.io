@@ -1,0 +1,78 @@
+:root {
+    /* Core Theme Colors */
+    --mk-bg-base: #02040a; 
+    --mk-grid-color: rgba(65, 234, 255, 0.06);
+    --mk-glow-primary: rgba(101, 50, 255, 0.322);
+    --mk-glow-secondary: rgba(0, 200, 255, 0.363);
+    
+    /* Overriding Material for MkDocs specific variables 
+       to ensure text remains readable if the user forgets to set Dark Mode 
+    */
+    --md-default-bg-color: var(--mk-bg-base);
+}
+
+/* * Robust Selector Strategy (FIXED):
+ * 1. body[data...]: Targets body when it HAS the attribute (Standard MkDocs)
+ * 2. [data...] body: Targets body when attribute is on HTML (Legacy/Custom)
+ * 3. html body: Fallback
+ */
+body[data-md-color-scheme="slate"],
+body[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] body, 
+[data-md-color-scheme="default"] body,
+html body { 
+    background-color: var(--mk-bg-base) !important;
+    /* The Grid Pattern */
+    background-image: 
+        radial-gradient(circle at center, transparent 0%, var(--mk-bg-base) 100%),
+        linear-gradient(0deg, transparent 24%, var(--mk-grid-color) 25%, var(--mk-grid-color) 26%, transparent 27%, transparent 74%, var(--mk-grid-color) 75%, var(--mk-grid-color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--mk-grid-color) 25%, var(--mk-grid-color) 26%, transparent 27%, transparent 74%, var(--mk-grid-color) 75%, var(--mk-grid-color) 76%, transparent 77%, transparent) !important;
+    background-size: 100% 100%, 60px 60px, 60px 60px !important;
+    background-attachment: fixed !important;
+    min-height: 100vh;
+}
+
+/* Animated Glowing Orbs */
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.6;
+    animation: float 20s infinite alternate ease-in-out;
+    pointer-events: none;
+}
+
+body::before {
+    background: radial-gradient(circle, var(--mk-glow-primary), transparent 70%);
+    top: -20%;
+    left: -20%;
+}
+
+body::after {
+    background: radial-gradient(circle, var(--mk-glow-secondary), transparent 70%);
+    bottom: -20%;
+    right: -20%;
+    animation-delay: -10s;
+}
+
+/* Make the main content container slightly transparent so background shows */
+.md-main__inner, .md-content {
+    background: transparent !important;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, 50px) scale(1.5); }
+    66% { transform: translate(-20px, 20px) scale(0.5); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+        /* * ==========================================
+         * END OF MKDOCS CSS
+         * ==========================================
+         */

@@ -1,0 +1,827 @@
+/* =========================================
+   1. GLOBAL THEME & VARIABLES
+   ========================================= */
+:root {
+  /* 2. MkDocs Material Overrides */
+  --neon-rgb: 189, 66, 255; 
+  --white-rgb: 255, 255, 255;     /* General White elements */
+
+  --md-accent-fg-color: #34EDF3; /* 2. Color of links when you hover */
+  --md-default-fg-color--light: #bba7ba; /* captions */
+
+  --md-typeset-color: #c4c4c4ce;
+
+  --md-code-bg-color: #272a35;
+  --md-code-fg-color: #adb0bd;
+
+  /* 3. Background Colors */
+  --bg-dark: #0f0c29;
+  --bg-mid: #302b63;
+  --bg-light: #24243e;
+
+  /* FIX A: Gradients cannot be assigned to standard color variables */
+  /* This variable below is custom; you must apply it manually in your CSS later */
+  --custom-gradient: linear-gradient(135deg, var(--bg-dark), var(--bg-mid), var(--bg-light));
+
+
+  /* 4. Glassmorphism */
+  /* FIX C: You cannot pass a HEX code into rgba() directly */
+  --white-rgb-values: 255, 255, 1; /* YELLOW - TITLES */
+  --text-white: rgb(var(--white-rgb)); /* Used as standard color */
+  --glass-bg: rgba(var(--white-rgb), 0.03);
+  --glass-border: 1px solid rgba(var(--white-rgb), 0.08);
+
+  /* 5. Secondary UI Colors */
+  --text-muted: #b0b0b0;
+  --text-dim: #ccc;
+  --text-off-white: #ddd;
+
+  /* 6. Color of date in timeline, big button, */
+  --neon-accent: rgb(var(--neon-rgb), 2);
+  
+  /* Workaround: Define neon shadow as a solid color or convert HEX to RGB manually */
+  /* #ff13ff is rgb(255, 19, 255) */
+  --neon-shadow: rgba(var(--neon-rgb), 0.4);
+  
+  --md-header-bg-color: transparent !important;
+  --md-tabs-bg-color: transparent !important;
+
+  --grad-start: #34EDF3;
+  --grad-end: rgb(var(--neon-rgb));
+}
+
+/* 1. Force the top header bar to be transparent */
+.md-header {
+  background-color: transparent !important;
+  box-shadow: none !important; /* Removes the bottom shadow line */
+}
+
+/* 2. Force the navigation tabs (Home, Education...) to be transparent */
+.md-tabs {
+  background-color: transparent !important; 
+  box-shadow: none !important;
+}
+
+body {
+    background: var(--custom-gradient) !important;
+    background-attachment: fixed !important;
+}
+
+/* =========================================
+   2. LAYOUT & NAVIGATION
+   ========================================= */
+.md-content__inner {
+    max-width: 1400px !important;
+    margin: 100 auto;
+}
+
+/* MkDocs Header Overrides */
+.md-header {
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
+}
+
+.md-nav__title {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.md-nav__item--active > .md-nav__link, 
+.md-nav__link--active {
+    color: var(--neon-accent) !important;
+    font-weight: bold;
+}
+
+.md-nav__item--active > .md-nav__link {
+    background: rgba(var(--neon-rgb), 0.1);
+    border-radius: 8px;
+}
+
+/* Hide default H1 when Bento Grid is present */
+.md-content__inner:has(.bento-grid) > h1 {
+    display: none !important;
+}
+
+h1.title {
+    display: block !important;
+    color: var(--text-white) !important;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+
+
+
+
+/* =========================================
+   3. HERO SECTION
+   ========================================= */
+.hero-section {
+    text-align: center;
+    padding: 3rem 1rem 4rem 1rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-white);
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(0deg, var(--grad-start), var(--grad-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================
+   4. UI ELEMENTS (Buttons, Charts, Tags)
+   ========================================= */
+/* Neon Button */
+.neon-button {
+    background: var(--neon-accent);
+    color: var(--text-white) !important;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    box-shadow: 0 0 15px var(--neon-shadow);
+    transition: 0.3s;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 25px rgba(var(--neon-rgb), 0.7);
+    transform: scale(1.05);
+}
+
+/* Text Links & Stats */
+.text-link {
+    color: var(--neon-accent);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+    display: inline-block;
+}
+
+.highlight-stat {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--neon-accent);
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Tech Tags */
+.tech-tag {
+    background: rgba(var(--white-rgb), 0.1);
+    border: 1px solid rgba(var(--white-rgb), 0.2);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    font-family: monospace;
+    color: var(--text-dim);
+}
+
+.bar {
+    width: 100%;
+    background: linear-gradient(to top, var(--bg-mid), var(--neon-accent));
+    border-radius: 4px;
+}
+
+/* =========================================
+   5. BENTO GRID SYSTEM
+   ========================================= */
+/* =========================================
+   5. BENTO GRID SYSTEM (Unified Aesthetics)
+   ========================================= */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    gap: 24px;
+    padding: 10px;
+}
+
+.bento-card {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 24px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+    background: rgba(var(--white-rgb), 0.07);
+    border-color: rgba(var(--neon-rgb), 0.3);
+    box-shadow: 0 10px 30px -10px rgba(var(--black-rgb), 0.5);
+}
+
+/* --- New Aesthetic Headers for ALL Cards --- */
+/* Matches .card-header-title */
+.bento-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.9);
+}
+
+/* Matches .card-header-icon */
+.card-icon {
+    font-size: 1.1rem;
+    color: var(--neon-accent);
+    margin-bottom: 0.8rem;
+    display: inline-block;
+}
+
+/* Standard description text matches .rotator-sub */
+.subtext {
+    font-size: 0.85rem;
+    color: rgba(var(--white-rgb), 0.6);
+    line-height: 1.5;
+    margin-top: 0.2rem;
+}
+
+/* --- Shared Components (Static Header/Footer) --- */
+.card-static-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.05); /* Optional subtle divider */
+}
+
+.card-header-icon {
+    font-size: 1.1rem;
+    color: var(--neon-accent);
+}
+
+.card-header-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.9);
+}
+
+.card-static-footer {
+    margin-top: auto;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 12px;
+    width: 100%;
+}
+
+.card-static-footer:hover {
+    opacity: 1;
+}
+
+/* --- Shared Typography for Content --- */
+.rotator-main {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-white);
+    line-height: 1.35;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rotator-sub {
+    font-size: 0.85rem;
+    color: rgba(var(--white-rgb), 0.6);
+    line-height: 1.5;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Special Card Sizes */
+.wide-card { grid-column: span 2; }
+.extra-wide-card { grid-column: span 3; }
+.education-card {
+    grid-row: span 2;
+    background: linear-gradient(180deg, rgba(var(--white-rgb), 0.03), rgba(var(--neon-rgb), 0.05));
+}
+
+@media (max-width: 960px) {
+    .bento-grid { grid-template-columns: 1fr; }
+    
+    /* Fix: Force override inline styles on mobile */
+    .bento-card { 
+        grid-column: span 1 !important; 
+        grid-row: auto !important;
+    }
+    .hero-title { font-size: 2.2rem; }
+}
+
+/* =========================================
+   6. TIMELINE (Education)
+   ========================================= */
+.timeline {
+    border-left: 2px solid rgba(var(--neon-rgb), 0.3);
+    margin-left: 5px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline h3 {
+    margin: 0 0 0.2rem;
+    color: var(--text-white);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.timeline .date {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: var(--neon-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5em;
+    display: block;
+    text-shadow: 0 0 10px var(--neon-shadow);
+}
+
+.timeline p {
+    margin: 0 0 2em;
+    opacity: 0.8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.timeline-item {
+    position: relative;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--md-default-bg-color);
+    border: 2px solid var(--neon-accent);
+    box-shadow: 0 0 10px var(--neon-accent);
+    z-index: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover::before {
+    transform: scale(1.3);
+    box-shadow: 0 0 20px var(--neon-accent);
+    background: var(--neon-accent);
+}
+
+/* =========================================
+   7. SOCIAL BUTTONS
+   ========================================= */
+.social-container {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 45px;
+    height: 45px;
+    padding: 0 !important;
+    background: rgba(var(--white-rgb), 0.05);
+    border: 1px solid rgba(var(--white-rgb), 0.1);
+    border-radius: 12px;
+    color: rgba(var(--white-rgb), 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn i, 
+.social-btn svg {
+    font-size: 1.5rem;
+    line-height: 0 !important;
+    display: block !important;
+    margin: 0 !important;
+}
+
+.social-btn:hover {
+    background: rgba(var(--neon-rgb), 0.2);
+    border-color: rgba(var(--neon-rgb), 0.3);
+    color: var(--neon-accent);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(var(--neon-rgb), 0.3);
+}
+
+/* =========================================
+   8. PUBLICATION LIST (Neon Table)
+   ========================================= */
+.neon-table thead { display: none; }
+
+.neon-table, .neon-table tbody, .neon-table tr, .neon-table td {
+    display: block;
+    width: 100%;
+}
+
+.table-container {
+    background: transparent;
+    border: none;
+    overflow: visible;
+}
+
+.neon-table tr {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 20px;
+    margin-bottom: 24px;
+    padding: 24px;
+    position: relative;
+    transition: transform 0.2s ease, border-color 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.neon-table tr:hover {
+    transform: translateY(-3px);
+    border-color: rgba(var(--neon-rgb), 0.4);
+    box-shadow: 0 10px 30px -10px rgba(var(--black-rgb), 0.5);
+    background: rgba(var(--white-rgb), 0.05);
+}
+
+.neon-table td {
+    padding: 0;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.neon-table td:last-child {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(var(--white-rgb), 0.1);
+    display: flex;
+    gap: 15px;
+}
+
+/* Table Content Cells */
+.year-cell {
+    color: var(--neon-accent);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.pub-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-white);
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.title-link {
+    color: var(--text-white);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.title-link:hover {
+    color: var(--neon-accent);
+    text-decoration: underline;
+    text-decoration-color: var(--neon-accent);
+}
+
+.pub-authors {
+    font-size: 0.95rem;
+    color: rgba(var(--white-rgb), 0.7);
+    line-height: 1.5;
+}
+
+.venue-cell {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 4px;
+    border-left: 2px solid var(--neon-accent);
+    padding-left: 10px;
+}
+
+.table-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    color: var(--text-white);
+    opacity: 0.6;
+    transition: 0.2s;
+    background: rgba(var(--white-rgb), 0.05);
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.table-icon:hover {
+    opacity: 1;
+    color: var(--text-white);
+    background: rgba(var(--neon-rgb), 0.1);
+    border-color: var(--neon-accent);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   9. GLASSMORPHISM RESOURCE CARDS
+   ========================================= */
+.md-typeset .grid.cards > ul > li {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: var(--glass-border) !important;
+    border-top: 1px solid rgba(var(--white-rgb), 0.15) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 15px rgba(var(--black-rgb), 0.1);
+    transition: transform 0.2s ease, border-color 0.2s, background 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+    background: rgba(var(--white-rgb), 0.08) !important;
+    border-color: var(--neon-accent) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(var(--black-rgb), 0.2);
+    cursor: default;
+}
+
+.md-typeset .grid.cards > ul > li hr {
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.1) !important;
+    margin: 1em 0;
+}
+
+.md-typeset .grid.cards > ul > li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--neon-accent);
+}
+
+.md-typeset .grid.cards > ul > li a:hover {
+    color: var(--text-white);
+}
+
+/* =========================================
+   10. INDIVIDUAL PUBLICATION PAGE
+   ========================================= */
+.pub-page-layout {
+    margin-top: 1rem;
+}
+
+.pub-header {
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pub-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    background: -webkit-linear-gradient(0deg, var(--text-white), var(--text-off-white));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pub-meta {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pub-venue {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--neon-accent);
+}
+
+.pub-year {
+    background: rgba(var(--white-rgb), 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.pub-authors-list {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+.pub-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Grid layout for abstract + image */
+.pub-content-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Layout variants */
+.pub-content-grid.has-image {
+    grid-template-columns: 1fr 2fr;
+}
+
+.pub-content-grid.no-image {
+    grid-template-columns: 1fr;
+}
+
+.pub-image-container img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(var(--black-rgb), 0.3);
+    border: 1px solid rgba(var(--white-rgb), 0.1);
+}
+
+.pub-abstract-text {
+    font-size: 1.0rem;
+    line-height: 1.8;
+    color: rgba(var(--white-rgb), 0.85);
+    background: rgba(var(--black-rgb), 0.2);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 3px solid var(--neon-accent);
+}
+
+@media (max-width: 768px) {
+    .pub-content-grid.has-image {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   11. ROTATING BENTO CARD
+   ========================================= */
+.rotating-wrapper {
+    display: grid;
+    width: 100%;
+    flex-grow: 1; 
+    position: relative;
+    /* overflow: hidden; Removed to ensure shadows/etc don't get clipped if refined, but good to have if sliding out of bounds */
+}
+
+/* Slide Up Animation */
+.rotating-item {
+    grid-area: 1 / 1; 
+    opacity: 0;
+    transform: translateY(15px); /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.rotating-item.active {
+    opacity: 1;
+    transform: translateY(0); /* Slide into place */
+    z-index: 2;
+    pointer-events: auto;
+}
+
+/* Progress Bar Styles */
+.ticker-bar-container {
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,0.1);
+    margin-bottom: 0.8rem;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.ticker-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--neon-accent), var(--grad-start));
+    width: 0;
+}
+
+.ticker-bar.animate-progress {
+    animation-name: tickerFill;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tickerFill {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+/* Pause everything on hover */
+.bento-card:hover .ticker-bar {
+    animation-play-state: paused;
+}
+
+/* Link Styling */
+.rotator-main-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.rotator-main-link:hover {
+    color: var(--neon-accent);
+    transform: translateX(2px); /* Subtle shift to indicate interactivity */
+}
+
+/* Header/Footer Updates */
+.card-static-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+    padding-bottom: 5px;
+}
+
+.card-header-icon {
+    font-size: 1.1rem;
+    color: var(--neon-accent);
+}
+
+.card-header-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.9);
+}
+
+.card-static-footer {
+    margin-top: auto;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 10px;
+    width: 100%;
+}
+
+.card-static-footer:hover {
+    opacity: 1;
+}
+
+/* Text Styling */
+.rotator-main {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-white);
+    line-height: 1.35;
+    margin-bottom: 6px;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rotator-sub {
+    font-size: 0.85rem;
+    color: rgba(var(--white-rgb), 0.6);
+    line-height: 1.5;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
