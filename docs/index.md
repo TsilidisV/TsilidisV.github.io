@@ -1,5 +1,6 @@
 ---
-title: Home
+title: Vasilis Tsilidis' personal site
+description: Stay up to date with my research, projects and blog posts.
 hide:
   - navigation
   - toc
