@@ -540,6 +540,11 @@ def define_env(env):
         unique_id = f"rotator-{random.randint(1000, 9999)}"
         grid_style = f"grid-column: span {width}; grid-row: span {height};"
 
+        # Auto-detect tall card
+        card_classes = "bento-card rotating-card"
+        if height > 1:
+            card_classes += " tall-card"
+
         # Logic to handle Icon:
         # 1. Fix missing base class (e.g. "mdi-file" -> "mdi mdi-file")
         if icon.startswith("mdi-") and " " not in icon:
@@ -556,7 +561,7 @@ def define_env(env):
 
         # --- HTML CONSTRUCTION ---
         html = dedent(f"""
-        <div class="bento-card rotating-card" id="{unique_id}" style="{grid_style}">
+        <div class="{card_classes}" id="{unique_id}" style="{grid_style}">
             
             <div class="card-static-header">
                 {icon_html}

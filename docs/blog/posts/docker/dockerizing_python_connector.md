@@ -11,10 +11,11 @@ tags:
   - productivity
   - mkdocs
 title: "Introduction to Docker - Part 5: Dockerizing a Python Script"
+description: "This article breaks down the containerization setup for a Python application which connects to a PostgreSQL database, specifically focusing on the build process (`Dockerfile`) and the application service configuration (`docker-compose.yml`)."
 ---
-# {{ title }}
 
-This article breaks down the containerization setup for a Python application which connects to a PostgreSQL database, specifically focusing on the build process (`Dockerfile`) and the application service configuration (`docker-compose.yml`).
+# {{ title }}
+{{ description }}
 
 <!-- more -->
 

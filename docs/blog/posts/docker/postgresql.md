@@ -11,10 +11,11 @@ tags:
   - productivity
   - mkdocs
 title: "Introduction to Docker - Part 4: Connecting Python to a Dockerized PostgreSQL"
+description: "Bridge the gap between your local Python environment and a Dockerized database using SQLAlchemy, while securing your credentials with environment variables."
 ---
-# {{ title }}
 
-Bridge the gap between your local Python environment and a Dockerized database using SQLAlchemy, while securing your credentials with environment variables.
+# {{ title }}
+{{ description }}
 
 <!-- more -->
 

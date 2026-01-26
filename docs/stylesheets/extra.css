@@ -719,6 +719,16 @@ h1.title {
     pointer-events: auto;
 }
 
+/* --- TALL CARD VARIATION --- */
+/* Allows text to fill up more vertical space in tall cards */
+.tall-card .rotator-main {
+    -webkit-line-clamp: 6 !important;
+}
+
+.tall-card .rotator-sub {
+    -webkit-line-clamp: 8 !important;
+}
+
 /* Progress Bar Styles */
 .ticker-bar-container {
     width: 100%;

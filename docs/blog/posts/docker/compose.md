@@ -9,9 +9,10 @@ tags:
   - productivity
   - mkdocs
 title: "Introduction to Docker - Part 3: Compose"
+description: "Orchestrate a complete architecture by connecting a PostgreSQL database and pgAdmin interface using declarative configuration, internal networking, and Service Discovery."
 ---
 # {{ title }}
-Orchestrate a complete architecture by connecting a PostgreSQL database and pgAdmin interface using declarative configuration, internal networking, and Service Discovery.
+{{ description }}
 
 <!-- more -->
 

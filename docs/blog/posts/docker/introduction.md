@@ -9,11 +9,11 @@ categories:
 tags:
   - productivity
   - mkdocs
-title: "Introduction to Docker"
+description: "This guide is a practical, Python-centric introduction to Docker that takes you from basic concepts like images and containers to building and optimizing efficient data pipelines."
 ---
-# {{ title }}
 
-This guide is a practical, Python-centric introduction to Docker that takes you from basic concepts like images and containers to building and optimizing efficient data pipelines.
+# {{ title }}
+{{ description }}
 
 <!-- more -->
 

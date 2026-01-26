@@ -7,11 +7,12 @@ tags:
   - productivity
   - mkdocs
 title: "Introduction to `uv`"
+description: "Discover `uv`, a high-speed Python package manager, and see how to initialize projects, lock dependencies, and share reproducible environments instantly."
 ---
 
 # {{ title }}
+{{ description }}
 
-Discover `uv`, a high-speed Python package manager, and see how to initialize projects, lock dependencies, and share reproducible environments instantly.
 
 <!-- more -->
 
