@@ -5,8 +5,9 @@ weight: 100
 repo: https://github.com/...
 tags:
   - Python
-  - Jinja2
   - CI/CD
+  - CSS
+  - HTML
 ---
 
 # {{ page.title }}
