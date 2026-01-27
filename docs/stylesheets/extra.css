@@ -354,6 +354,8 @@ h1.title {
     color: var(--text-white);
     font-weight: 700;
     font-size: 1.1rem;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 .timeline .date {
