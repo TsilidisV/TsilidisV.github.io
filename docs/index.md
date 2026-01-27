@@ -128,7 +128,7 @@ hide:
       folder="docs/blog/posts",
       keys=['title', 'description'],
       title="Blog",
-      icon="fa-solid fa-microphone-lines",
+      icon="fa-solid fa-pen-nib",
       url="/blog/",
       url_text="View Blog",
       order="newest",
