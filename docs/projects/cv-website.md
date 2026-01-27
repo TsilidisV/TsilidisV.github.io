@@ -11,15 +11,16 @@ date: 2026-01-27
 weight: 100
 ---
 
-# {{ title }}
 
-<div class="hero-section" style="padding: 2rem 0; text-align: left;">  
-<p class="hero-subtitle" style="margin: 0; max-width: 100%;">  
-You are looking at it right now! This website is a "meta-project" designed to be more than just a resume—it is a playground for static site generation experiments and automation.  
-</p>  
-<div style="margin-top: 20px;">  
-<a href="https://www.google.com/search?q=https://github.com/YOUR\_USERNAME/YOUR\_REPO" class="neon-button">View Source Code</a>  
-</div>  
+
+<div class="hero-section" style="padding: 2rem 0; text-align: left;">
+<h1 class="hero-title" style="text-align: left; margin-bottom: 1rem;"> {{ title }} </h1>
+<p class="hero-subtitle" style="margin: 0; max-width: 100%;">
+You are looking at it right now! This website is a "meta-project" designed to be more than just a resume; it is a playground for static site generation experiments and automation.
+</p>
+<div style="margin-top: 20px;">
+<a href="https://github.com/TsilidisV/TsilidisV.github.io" class="neon-button">View Source Code</a>
+</div>
 </div>
 
 ## 🚀 The Motivation
@@ -85,5 +86,5 @@ The site is built using a **CI/CD pipeline** on GitHub Actions. It follows a mod
 
 1. Trigger: Push to main branch.  
 2. Build: A uv-optimized Python environment installs dependencies.  
-3. Generate: main.py runs, converting BibTeX and Markdown data into HTML structures.  
+3. Generate: `main.py` runs, converting BibTeX and Markdown data into HTML structures.  
 4. Deploy: mkdocs build compiles the final site, which is pushed natively to GitHub Pages via artifacts.
