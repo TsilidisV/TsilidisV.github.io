@@ -24,7 +24,7 @@ Here is my academic background.
     <strong>Hellenic Open University</strong>
     <p>Thesis: <a href="https://apothesis.eap.gr/archive/item/75362?lang=en">Mathematical Modelling of Immune Response in Breast Cancer</a></p>
     
-    Graduated with Distinction. Capstone project involved building a recommendation engine for a retail client.
+    Graduated with Distinction.
   </div>
 
   <div class="timeline-item">
@@ -37,5 +37,4 @@ Here is my academic background.
 
 ## Certifications
 
-* **AWS Certified Solutions Architect** (2023)
-* **Deep Learning Specialization** - Coursera (2022)
+* [**Introduction to SQL** - Simplilearn (2026)](https://simpli-web.app.link/e/BUHnI6EKg0b)
