@@ -95,6 +95,7 @@ docker run -v Host_Path:Container_Path Image_Name
 In our case, we saw earlier that python will save `data.csv` on `/app/data/` on the container, hence we replace `Container_Path` with `/app/data/`.
 
 Regarding the `Host_Path`, there are two ways to go:
+
 - Bind Mount: We tell docker to use a specific folder on our host machine. We could for example use the relative path `./output` or the absolute path `"C:\Users\User_Name\Documents\Data\"`.
 - Named Volume: We need docker to keep the data in a safe place but without telling it exactly where to store it. We could for example use the name `my_data`. Generally we don't touch these files directly, rather we let docker handle them.
 
