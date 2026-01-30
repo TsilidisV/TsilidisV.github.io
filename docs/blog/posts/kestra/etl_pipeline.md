@@ -392,7 +392,7 @@ We'll use the `io.kestra.plugin.jdbc.postgresql.Queries` type once more:
 - id: add_unique_id_to_road
   type: io.kestra.plugin.jdbc.postgresql.Queries
   sql: |
-    UPDATE {% raw %} {{ vars.road_staging_table }} {% endraw %} 
+    UPDATE \{\{ vars.road_staging_table \}\}
     SET 
       unique_row_id = md5(
         COALESCE(CAST(device_id AS text), '') ||
