@@ -171,7 +171,7 @@ commands:
 
 This time, we change our docker image from `ubuntu:latest` to `python:3.9-slim` allowing us to use `pip` and `Python`.
 
-However, there's an even better way to run Python in Kestra, with the use of `io.kestra.plugin.scripts.python.Script`. For more, check out this article _____________________________________________________
+However, there's an even better way to run Python in Kestra, with the use of `io.kestra.plugin.scripts.python.Script`. For more, check out [this article](python.md)!
 
 ### Inputs
 We usually want flows to react to data like a filename, a date, or a user's name. To do this we use inputs. Inputs are defined at the top level of our flow (alongside `id` and `tasks`).
