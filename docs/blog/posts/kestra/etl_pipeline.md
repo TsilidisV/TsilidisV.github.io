@@ -13,9 +13,10 @@ tags:
   - Data Normalization
 title: "Constructing an ETL pipeline with Kestra"
 description: "Construct a robust, containerized ETL pipeline using Kestra to orchestrate the ingestion of Greek road traffic data into PostgreSQL. The guide details extracting API data, normalizing JSON with Python/Pandas, and ensuring data integrity through staging tables and SQL merge strategies."
+render_macros: false
 ---
-# {{ title }}
-{{ description }}
+# Constructing an ETL pipeline with Kestra
+Construct a robust, containerized ETL pipeline using Kestra to orchestrate the ingestion of Greek road traffic data into PostgreSQL. The guide details extracting API data, normalizing JSON with Python/Pandas, and ensuring data integrity through staging tables and SQL merge strategies
 
 <!-- more -->
 
@@ -378,7 +379,6 @@ Remember that `unique_row_id` we added to the tables earlier? If we look over at
 
 We'll use the `io.kestra.plugin.jdbc.postgresql.Queries` type once more:
 
-{% raw %}
 ```yaml
 - id: add_unique_id_to_traffic
   type: io.kestra.plugin.jdbc.postgresql.Queries
@@ -401,7 +401,6 @@ We'll use the `io.kestra.plugin.jdbc.postgresql.Queries` type once more:
         COALESCE(CAST(road_info AS text), '') 
       );
 ```
-{% endraw %}
 
 These two `UPDATE` SQL commands set a deterministic hashed identifier for every row in our staging tables and then hashing the result with `md5` so we get a compact `unique_row_id `useful for dedupe (i.e., eliminating data deduplication) and  (i.e., scripts that can be executed multiple times without changing the result beyond the initial application) merges.
 
