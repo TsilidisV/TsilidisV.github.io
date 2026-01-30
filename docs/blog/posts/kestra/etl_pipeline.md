@@ -312,7 +312,7 @@ jdbc:<dialect>://<host>:<port>/<database>
 ```
 meaning that for our case it should be `jdbc:postgresql://pgdatabase:5432/traffic`. Additionally, the `username` and `password` are both `root`.
 
-Now, if we conntect to the pgAdmin instance (as we saw [here](../docker/compose.md)), we'll see that two new tables were created!
+Now, if we connect to the pgAdmin instance (as we saw [here](../docker/compose.md)), we'll see that two new tables were created!
 
 #### Staging Table
 Now we should be ready to add our data to the newly constructed tables. However, what would happen to the table if we added a bad batch, that is we loaded our table with data that were incomplete or corrupted (for example missing keys or required fields, bad CSV quoting, invalid JSON, etc.)? Then, our table would be contaminated with the bad batch and would need cleaning. A way to get rid of this problem is to use temporary table, called **staging table**, to load the data first into it, and then, if the data were loaded successfully, merge it to our clean data.
@@ -392,7 +392,7 @@ We'll use the `io.kestra.plugin.jdbc.postgresql.Queries` type once more:
 - id: add_unique_id_to_road
   type: io.kestra.plugin.jdbc.postgresql.Queries
   sql: |
-    UPDATE {{ vars.road_staging_table }}
+    UPDATE {% raw %} {{ vars.road_staging_table }} {% endraw %} 
     SET 
       unique_row_id = md5(
         COALESCE(CAST(device_id AS text), '') ||
